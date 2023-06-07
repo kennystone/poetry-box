@@ -19,11 +19,12 @@
   font-family: "miller-text", Georgia, serif;
 }
 
-@font-face {
-  font-family: "Bookmania";
-  src: url('/fonts/bookmania-regular.woff2') format('woff2'),
-    url('/fonts/bookmania-regular.woff') format('woff');
+span.red {
+  color: "red"
+}
 
+span.ss10 {
+  font-feature-settings: '"ss10"';
 }
 
 .ss14 {

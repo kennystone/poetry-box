@@ -1,11 +1,13 @@
-import Image from 'next/image'
 import styles from './page.module.css'
+import Swash from "./swash"
+
 
 export default function Home() {
+  //const ss = (n: number) => ({ fontFeatureSettings: `"ss${n}"` })
   return (
     <main className={styles.main}>
       <div className={styles.poem}>
-        <h1>Just a Simple Declaration of Love</h1>
+        <h1><Swash letter="J" codes={["10"]} />ust a Simple Declaration of Love</h1>
         <p>
           In the reddish gray of morning just before night concedes I know the
           silhouette of Sunflowers turning their heads to the east
