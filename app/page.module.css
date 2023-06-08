@@ -16,21 +16,14 @@
 
 .poem p {
   margin: 1.5rem 0rem;
-  font-family: "miller-text", Georgia, serif;
+  font-family: "miller-text", Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+  color: #111;
 }
 
-span.red {
-  color: "red"
+.poem h3 {
+  font-weight: 500;
 }
 
-span.ss10 {
-  font-feature-settings: '"ss10"';
-}
-
-.ss14 {
-  font-feature-settings: 'ss14';
-}
-
-.ss18 {
-  font-feature-settings: 'ss18';
+.poem .narrow {
+  margin: 0em 0em;
 }

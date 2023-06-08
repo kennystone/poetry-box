@@ -3,11 +3,15 @@ import Swash from "./swash"
 
 
 export default function Home() {
-  //const ss = (n: number) => ({ fontFeatureSettings: `"ss${n}"` })
   return (
     <main className={styles.main}>
       <div className={styles.poem}>
-        <h1><Swash letter="J" codes={["10"]} />ust a Simple Declaration of Love</h1>
+        <h1 style={{ fontSize: "2em", color: "rgb(157, 58, 53);" }}>
+          Just <Swash letter="a" codes={["01"]} /> Simple <Swash letter="D" codes={["11"]} />ecl<Swash letter="a" codes={["01"]} /><Swash letter="r" codes={["19"]} /><Swash letter="a" codes={["01"]} />tion o<Swash letter="f" codes={["14", "16"]} /> Lov<Swash letter="e" codes={[""]} />
+        </h1>
+        <div>
+          <h3 style={{ fontSize: "1.1em" }}><span className="author">Nikki Giovanni</span></h3>
+        </div>
         <p>
           In the reddish gray of morning just before night concedes I know the
           silhouette of Sunflowers turning their heads to the east
@@ -25,14 +29,14 @@ export default function Home() {
           Mother 'Possum with six youngsters on her back slowly like any other overburdened woman makes her way back home
         </p>
 
-        <p>
+        <p className={styles.narrow}>
           I look at the clouds push off against the lighter blue
         </p>
 
-        <p>
+        <p className={styles.narrow} style={{ marginLeft: "34%" }}>
           and
         </p>
-        <p>
+        <p className={styles.narrow}>
           making coffee I hear the friendly gurgle of the drip maker the sigh of the toast softly browning
         </p>
 
