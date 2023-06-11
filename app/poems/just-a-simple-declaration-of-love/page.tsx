@@ -1,6 +1,7 @@
 import styles from './../poems.module.css'
 import Swash from "../../swash"
 import Poem from "../poem"
+import Author from "../author"
 
 export const justASimpleDeclarationOfLove: Poem = new Poem(
     "just-a-simple-declaration-of-love",
@@ -13,10 +14,10 @@ export default function JustASimpleDeclarationOfLove() {
     return (
         <div className={styles.poem}>
             <h1 style={{ fontSize: "2em", color: "rgb(157, 58, 53);" }}>
-                Just <Swash letter="a" codes={["01"]} /> Simple <Swash letter="D" codes={["11"]} />ecl<Swash letter="a" codes={["01"]} /><Swash letter="r" codes={["19"]} /><Swash letter="a" codes={["01"]} />tion o<Swash letter="f" codes={["14", "16"]} /> Lov<Swash letter="e" codes={[""]} />
+                Just <Swash letter="a" codes={["01"]} /> Simple <Swash letter="D" codes={["11"]} /><Swash letter="e" codes={[]} />cl<Swash letter="a" codes={["01"]} /><Swash letter="r" codes={["19"]} /><Swash letter="a" codes={["01"]} />tion o<Swash letter="f" codes={["16"]} /> Lov<Swash letter="e" codes={[""]} />
             </h1>
             <div>
-                <h3 style={{ fontSize: "1.1em" }}><span className="author">{justASimpleDeclarationOfLove.author}</span></h3>
+                <Author author={justASimpleDeclarationOfLove.author} />
             </div>
             <p>
                 In the reddish gray of morning just before night concedes I know the

@@ -1,10 +1,12 @@
 import Poem from './poem'
 import { justASimpleDeclarationOfLove } from './just-a-simple-declaration-of-love/page'
+import { patience } from './patience/page'
 
 export function findPoemById(id: string): Poem {
-    return poems.filter(poem => poem.id === id)[0]
+    return allPoems.filter(poem => poem.id === id)[0]
 }
 
-const poems: Array<Poem> = [
-    justASimpleDeclarationOfLove
+export const allPoems: Array<Poem> = [
+    justASimpleDeclarationOfLove,
+    patience,
 ]

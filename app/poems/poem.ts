@@ -6,7 +6,7 @@ export default class Poem {
         public readonly date: Date) {
     }
 
-    path(): string {
-        return `/poems/${this.id}`
+    slug(): string {
+        return `${this.id}`
     }
 }
