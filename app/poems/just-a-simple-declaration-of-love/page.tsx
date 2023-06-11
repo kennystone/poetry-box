@@ -13,7 +13,7 @@ export const justASimpleDeclarationOfLove: Poem = new Poem(
 export default function JustASimpleDeclarationOfLove() {
     return (
         <div className={styles.poem}>
-            <h1 style={{ fontSize: "2em", color: "rgb(157, 58, 53);" }}>
+            <h1 style={{ fontSize: "2em", color: "rgb(157, 58, 53)" }}>
                 Just <Swash letter="a" codes={["01"]} /> Simple <Swash letter="D" codes={["11"]} /><Swash letter="e" codes={[]} />cl<Swash letter="a" codes={["01"]} /><Swash letter="r" codes={["19"]} /><Swash letter="a" codes={["01"]} />tion o<Swash letter="f" codes={["16"]} /> Lov<Swash letter="e" codes={[""]} />
             </h1>
             <div>
@@ -33,7 +33,7 @@ export default function JustASimpleDeclarationOfLove() {
             </p>
 
             <p>
-                Mother 'Possum with six youngsters on her back slowly like any other overburdened woman makes her way back home
+                Mother &apos;Possum with six youngsters on her back slowly like any other overburdened woman makes her way back home
             </p>
 
             <p className={styles.narrow}>
