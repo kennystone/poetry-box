@@ -1,2 +1,15 @@
 import localFont from 'next/font/local'
-export const BookMania = localFont({ src: './Bookmania-Regular.woff2' })
+export const BookMania = localFont({
+    src: [
+        {
+            path: './Bookmania-Regular.woff2',
+            weight: '400',
+            style: 'normal',
+        },
+        {
+            path: './Bookmania-Regular.woff',
+            weight: '400',
+            style: 'normal',
+        },
+    ]
+})
