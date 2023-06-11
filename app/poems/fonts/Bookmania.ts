@@ -11,5 +11,6 @@ export const BookMania = localFont({
             weight: '400',
             style: 'normal',
         },
-    ]
+    ],
+    fallback: ['Georgia', 'serif']
 })
