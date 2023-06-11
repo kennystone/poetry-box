@@ -1,5 +1,5 @@
 .poem h1 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     font-weight: 400;
     margin-bottom: 1rem;
     font-family: Bookmania, Georgia, serif;
@@ -27,7 +27,6 @@
 }
 
 .poem .sansSerif p {
-
     font-family: Charter, 'Bitstream Charter', source-sans-pro 'Sitka Text', Cambria, serif;
     font-family: proxima-nova, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     font-weight: 400;

@@ -2,6 +2,7 @@ import styles from './../poems.module.css'
 import Swash from "../../swash"
 import Poem from "../poem"
 import Author from "../author"
+import { BookMania } from "../fonts/Bookmania"
 
 export const justASimpleDeclarationOfLove: Poem = new Poem(
     "just-a-simple-declaration-of-love",
@@ -13,7 +14,7 @@ export const justASimpleDeclarationOfLove: Poem = new Poem(
 export default function JustASimpleDeclarationOfLove() {
     return (
         <div className={styles.poem}>
-            <h1 style={{ fontSize: "2em", color: "rgb(157, 58, 53)" }}>
+            <h1 className={BookMania.className} style={{ color: "rgb(157, 58, 53)" }}>
                 Just <Swash letter="a" codes={["01"]} /> Simple <Swash letter="D" codes={["11"]} /><Swash letter="e" codes={[]} />cl<Swash letter="a" codes={["01"]} /><Swash letter="r" codes={["19"]} /><Swash letter="a" codes={["01"]} />tion o<Swash letter="f" codes={["16"]} /> Lov<Swash letter="e" codes={[""]} />
             </h1>
             <div>

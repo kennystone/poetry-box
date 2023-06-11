@@ -2,6 +2,7 @@ import styles from './../poems.module.css'
 import Swash from "../../swash"
 import Poem from "../poem"
 import Author from "../author"
+import { BookMania } from "../fonts/Bookmania"
 
 export const patience: Poem = new Poem(
     "patience",
@@ -13,7 +14,7 @@ export const patience: Poem = new Poem(
 export default function Patience() {
     return (
         <div className={styles.poem}>
-            <h1 style={{ fontSize: "2em", color: "#111" }}>
+            <h1 className={BookMania.className} style={{ color: "#111" }}>
                 patie<Swash codes={["18"]} letter="n" />ce
             </h1>
             <Author author={patience.author} />
