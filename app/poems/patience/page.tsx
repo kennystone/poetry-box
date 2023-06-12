@@ -1,8 +1,8 @@
 import styles from './../poems.module.css'
-import Swash from "../swash"
 import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
-import { BookMania } from "../fonts/Bookmania"
+import { HeaderText } from "../PoemHeader"
+import PoemHeader from '../PoemHeader'
 
 export const patience: Poem = new Poem(
     "patience",
@@ -12,11 +12,13 @@ export const patience: Poem = new Poem(
 )
 
 export default function Patience() {
+    const headerTextData: HeaderText[] = [
+        ["patie", []],
+        ["n", ["18"]],
+        ["ce ", []]]
     return (
         <div className={styles.poem}>
-            <h1 className={BookMania.className} style={{ color: "#111" }}>
-                patie<Swash codes={["18"]} letter="n" />ce
-            </h1>
+            <PoemHeader headerData={headerTextData} styleProps={{ color: "#111" }} />
             <PoemAuthor author={patience.author} />
             <div className={styles.sansSerif}>
 
