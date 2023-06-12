@@ -1,5 +1,5 @@
 import { BookMania } from "./fonts/Bookmania";
-import Swash from "./swash";
+import Swash from "./Swash";
 
 export type HeaderText = [string, string[]]
 

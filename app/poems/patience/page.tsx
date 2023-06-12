@@ -21,7 +21,6 @@ export default function Patience() {
             <PoemHeader headerData={headerTextData} styleProps={{ color: "#111" }} />
             <PoemAuthor author={patience.author} />
             <div className={styles.sansSerif}>
-
                 <p className={styles.narrow}>
                     Call it sloth; call it sleaze;
                 </p>
