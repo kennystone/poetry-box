@@ -1,7 +1,9 @@
 import { BookMania } from "./fonts/Bookmania";
 import Swash from "./swash";
 
-export default function PoemHeader({ headerData, styleProps }: { headerData: [string, string[]][], styleProps: React.CSSProperties }) {
+export type HeaderText = [string, string[]]
+
+export default function PoemHeader({ headerData, styleProps }: { headerData: HeaderText[], styleProps: React.CSSProperties }) {
     const header = headerData.map(([text, codes], index) => {
         if (codes.length == 0) {
             // if no swash codes, just return the text

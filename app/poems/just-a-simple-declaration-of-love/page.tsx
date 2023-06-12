@@ -2,8 +2,8 @@ import styles from './../poems.module.css'
 import Swash from "../swash"
 import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
-import { BookMania } from "../fonts/Bookmania"
-import PoemHeader from "../PoemHeader"
+import { HeaderText } from "../PoemHeader"
+import PoemHeader from '../PoemHeader'
 
 export const justASimpleDeclarationOfLove: Poem = new Poem(
     "just-a-simple-declaration-of-love",
@@ -13,7 +13,7 @@ export const justASimpleDeclarationOfLove: Poem = new Poem(
 )
 
 export default function JustASimpleDeclarationOfLove() {
-    const headerStrData = [
+    const headerTextData: HeaderText[] = [
         ["Just ", []],
         ["a", ["01"]],
         [" Simple ", []],
@@ -29,7 +29,7 @@ export default function JustASimpleDeclarationOfLove() {
     ]
     return (
         <div className={styles.poem}>
-            <PoemHeader headerData={headerStrData} styleProps={{ color: "rgb(157, 58, 53)" }} />
+            <PoemHeader headerData={headerTextData} styleProps={{ color: "rgb(157, 58, 53)" }} />
             <div>
                 <PoemAuthor author={justASimpleDeclarationOfLove.author} />
             </div>
