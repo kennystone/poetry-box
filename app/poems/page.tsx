@@ -10,7 +10,9 @@ export default function Index() {
     const poemsList = allPoems.map(p => poemItem(p))
     return (
         <div>
-            <h1>hi, hello</h1>
+            <h1 className="text-3xl font-bold underline">
+                hi hello
+            </h1>
             <ul>
                 {poemsList}
             </ul>

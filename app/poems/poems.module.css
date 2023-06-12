@@ -1,9 +1,3 @@
-.poem h1 {
-    font-size: 2.1rem;
-    font-weight: 400;
-    margin-bottom: 1rem;
-}
-
 .poem p {
     margin: 1.5rem 0rem;
     color: #111;
@@ -16,9 +10,6 @@
 
 .author {
     font-family: "proxima-nova", Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-    font-weight: 400;
-    margin: 1.2em 0em;
-    font-size: 1.2em;
 }
 
 .poem .narrow {

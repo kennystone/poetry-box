@@ -1,8 +1,9 @@
 import styles from './../poems.module.css'
-import Swash from "../../swash"
+import Swash from "../swash"
 import Poem from "../poem"
-import Author from "../author"
+import PoemAuthor from "../PoemAuthor"
 import { BookMania } from "../fonts/Bookmania"
+import PoemHeader from "../PoemHeader"
 
 export const justASimpleDeclarationOfLove: Poem = new Poem(
     "just-a-simple-declaration-of-love",
@@ -12,13 +13,25 @@ export const justASimpleDeclarationOfLove: Poem = new Poem(
 )
 
 export default function JustASimpleDeclarationOfLove() {
+    const headerStrData = [
+        ["Just ", []],
+        ["a", ["01"]],
+        [" Simple ", []],
+        ["D", ["11"]],
+        ["e", ["01"]],
+        ["cl", []],
+        ["a", ["01"]],
+        ["r", ["19"]],
+        ["a", ["01"]],
+        ["tion o", []],
+        ["f", ["16"]],
+        [" Love", []],
+    ]
     return (
         <div className={styles.poem}>
-            <h1 className={BookMania.className} style={{ color: "rgb(157, 58, 53)" }}>
-                Just <Swash letter="a" codes={["01"]} /> Simple <Swash letter="D" codes={["11"]} /><Swash letter="e" codes={[]} />cl<Swash letter="a" codes={["01"]} /><Swash letter="r" codes={["19"]} /><Swash letter="a" codes={["01"]} />tion o<Swash letter="f" codes={["16"]} /> Lov<Swash letter="e" codes={[""]} />
-            </h1>
+            <PoemHeader headerData={headerStrData} styleProps={{ color: "rgb(157, 58, 53)" }} />
             <div>
-                <Author author={justASimpleDeclarationOfLove.author} />
+                <PoemAuthor author={justASimpleDeclarationOfLove.author} />
             </div>
             <p>
                 In the reddish gray of morning just before night concedes I know the
