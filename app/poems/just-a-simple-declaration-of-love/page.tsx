@@ -1,5 +1,4 @@
 import styles from './../poems.module.css'
-import Swash from "../swash"
 import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
 import { HeaderText } from "../PoemHeader"
