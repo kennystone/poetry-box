@@ -18,5 +18,5 @@ export default function PoemHeader({ headerData, styleProps }: Props) {
             return <Swash key={`swash-${index}`} letter={text} codes={codes} />
         }
     })
-    return <h1 className={`${BookMania.className} my-0.5 md:my-3.5 text-2xl md:text-4xl text-amber-800`} style={styleProps}>{header}</h1>
+    return <h1 className={`${BookMania.className} my-0.5 md:my-3.5 text-2xl md:text-4xl text-emerald-900`} style={styleProps}>{header}</h1>
 }

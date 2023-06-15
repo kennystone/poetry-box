@@ -1,13 +1,3 @@
-.poem p {
-    color: #111;
-    font-weight: 400;
-    font-style: normal;
-}
+.author {}
 
-.author {
-    font-family: "proxima-nova", Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-}
-
-.poem .sansSerif p {
-    font-family: proxima-nova, Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
-}
+.poem .sansSerif p {}

@@ -3,7 +3,7 @@ import Poem from './poem'
 import { allPoems } from './poems'
 
 function poemItem(poem: Poem) {
-    return <li><Link className="font-sans" href={`/poems/${poem.slug()}`}>{poem.title}</Link></li>;
+    return <li><Link className="font-sans text-slate-800" href={`/poems/${poem.slug()}`}>{poem.title}</Link></li>;
 }
 
 export default function Index() {
