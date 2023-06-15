@@ -3,7 +3,12 @@ import Swash from "./Swash";
 
 export type HeaderText = [string, string[]]
 
-export default function PoemHeader({ headerData, styleProps }: { headerData: HeaderText[], styleProps: React.CSSProperties }) {
+interface Props {
+    headerData: HeaderText[],
+    styleProps?: React.CSSProperties
+}
+
+export default function PoemHeader({ headerData, styleProps }: Props) {
     const header = headerData.map(([text, codes], index) => {
         if (codes.length == 0) {
             // if no swash codes, just return the text
@@ -13,5 +18,5 @@ export default function PoemHeader({ headerData, styleProps }: { headerData: Hea
             return <Swash key={`swash-${index}`} letter={text} codes={codes} />
         }
     })
-    return <h1 className={`${BookMania.className} my-2.5 md:my-3.5 text-2xl md:text-4xl`} style={styleProps}>{header}</h1>
+    return <h1 className={`${BookMania.className} my-0.5 md:my-3.5 text-2xl md:text-4xl text-amber-800`} style={styleProps}>{header}</h1>
 }

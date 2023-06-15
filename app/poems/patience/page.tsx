@@ -1,6 +1,7 @@
 import styles from './../poems.module.css'
 import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
+import { PoemParagraph } from '../PoemParagraph'
 import { HeaderText } from "../PoemHeader"
 import PoemHeader from '../PoemHeader'
 
@@ -11,6 +12,14 @@ export const patience: Poem = new Poem(
     new Date("2023-11-01")
 )
 
+interface PPProps {
+    children: string | JSX.Element | JSX.Element[],
+}
+
+const PP = ({ children }: PPProps): JSX.Element => {
+    return <PoemParagraph narrow={true}>{children}</PoemParagraph>
+}
+
 export default function Patience() {
     const headerTextData: HeaderText[] = [
         ["patie", []],
@@ -18,133 +27,133 @@ export default function Patience() {
         ["ce ", []]]
     return (
         <div className={styles.poem}>
-            <PoemHeader headerData={headerTextData} styleProps={{ color: "#111" }} />
+            <PoemHeader headerData={headerTextData} styleProps={{}} />
             <PoemAuthor author={patience.author} />
             <div className={styles.sansSerif}>
-                <p className={styles.narrow}>
+                <PP>
                     Call it sloth; call it sleaze;
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     call it bummery if you please;
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     I’ll call it patience;
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     I’ll call it joy, this,
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     my supine congress
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     with the newly yawning grass
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     and beetles chittering
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     in their offices
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     beneath me, as I
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     nearly drifting to dream
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     admire this so-called weed which,
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     if I guarded with teeth bared
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     my garden of all alien breeds,
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     if I was all knife and axe
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     and made a life of hacking
                     would not have burst gorgeous forth and beckoning
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     these sort of phallic spires
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     ringleted by these sort of vaginal blooms
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     which the new bees, being bees, heed;
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     and yes, it is spring, if you can’t tell
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     from the words my mind makes
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     of the world, and everything
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     makes me mildly or more
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     hungry—the worm turning
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     in the leaf mold; the pear blooms
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     howling forth their pungence
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     like a choir of wet-dreamed boys
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     hiking up their skirts; even
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     the neighbor cat’s shimmy
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     through the grin in the fence,
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     and the way this bee
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     before me after whispering
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     in my ear dips her head
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     into those dainty lips
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     not exactly like one entering a chapel
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     and friends
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     as if that wasn’t enough
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     blooms forth with her forehead dusted gold
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     like she has been licked
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     and so blessed
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     by the kind of God
-                </p>
-                <p className={styles.narrow}>
+                </PP>
+                <PP>
                     to whom this poem is prayer.
-                </p>
+                </PP>
             </div>
         </div>
     )
