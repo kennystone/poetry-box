@@ -1,4 +1,3 @@
-import styles from './../poems.module.css'
 import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
 import { HeaderText } from "../PoemHeader"
@@ -36,7 +35,7 @@ export default function JustASimpleDeclarationOfLove() {
         [" Love", []],
     ]
     return (
-        <div className={styles.poem}>
+        <div>
             <PoemHeader headerData={headerTextData} styleProps={{}} />
             <div>
                 <PoemAuthor author={justASimpleDeclarationOfLove.author} />

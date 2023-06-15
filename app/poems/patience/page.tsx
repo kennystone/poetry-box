@@ -1,4 +1,3 @@
-import styles from './../poems.module.css'
 import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
 import { PoemParagraph } from '../PoemParagraph'
@@ -26,10 +25,10 @@ export default function Patience() {
         ["n", ["18"]],
         ["ce ", []]]
     return (
-        <div className={styles.poem}>
+        <div>
             <PoemHeader headerData={headerTextData} styleProps={{}} />
             <PoemAuthor author={patience.author} />
-            <div className={styles.sansSerif}>
+            <div>
                 <PP>
                     Call it sloth; call it sleaze;
                 </PP>

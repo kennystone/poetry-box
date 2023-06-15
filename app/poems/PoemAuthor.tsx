@@ -1,4 +1,3 @@
-import styles from "./poems.module.css"
 
 export default function PoemAuthor(props: { author: string }) {
     return (
