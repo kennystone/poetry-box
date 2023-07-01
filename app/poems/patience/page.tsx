@@ -3,6 +3,7 @@ import PoemAuthor from "../PoemAuthor"
 import { PoemParagraph } from '../PoemParagraph'
 import { HeaderText } from "../PoemHeader"
 import PoemHeader from '../PoemHeader'
+import PoemFooter from "../PoemFooter"
 
 export const patience: Poem = new Poem(
     "patience",
@@ -154,6 +155,7 @@ export default function Patience() {
                     to whom this poem is prayer.
                 </PP>
             </div>
+            <PoemFooter date={patience.date} />
         </div>
     )
 }

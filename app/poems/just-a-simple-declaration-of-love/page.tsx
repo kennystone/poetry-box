@@ -2,6 +2,7 @@ import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
 import { HeaderText } from "../PoemHeader"
 import PoemHeader from '../PoemHeader'
+import PoemFooter from "../PoemFooter"
 import { PoemParagraph } from "../PoemParagraph"
 
 export const justASimpleDeclarationOfLove: Poem = new Poem(
@@ -80,6 +81,7 @@ export default function JustASimpleDeclarationOfLove() {
             <PP>
                 Calling the sun to work
             </PP>
+            <PoemFooter date={justASimpleDeclarationOfLove.date} />
         </div>
     )
 }
