@@ -1,16 +1,10 @@
-import Poem from "../poem"
 import PoemAuthor from "../PoemAuthor"
 import { HeaderText } from "../PoemHeader"
 import PoemHeader from '../PoemHeader'
-import PoemFooter from "../PoemFooter"
+import PoemFooter from "../PoemFooter/PoemFooter"
 import { PoemParagraph } from "../PoemParagraph"
+import { justASimpleDeclarationOfLove } from "../poems"
 
-export const justASimpleDeclarationOfLove: Poem = new Poem(
-    "just-a-simple-declaration-of-love",
-    "Nikki Giovanni",
-    "Just a Simple Declaration of Love",
-    new Date("2023-10-01")
-)
 
 interface PPProps {
     children: string | JSX.Element | JSX.Element[],
@@ -37,10 +31,7 @@ export default function JustASimpleDeclarationOfLove() {
     ]
     return (
         <div>
-            <PoemHeader headerData={headerTextData} styleProps={{}} />
-            <div>
-                <PoemAuthor author={justASimpleDeclarationOfLove.author} />
-            </div>
+            <PoemHeader headerData={headerTextData} poem={justASimpleDeclarationOfLove} styleProps={{}} />
             <PP>
                 In the reddish gray of morning just before night concedes I know the
                 silhouette of Sunflowers turning their heads to the east
@@ -81,7 +72,7 @@ export default function JustASimpleDeclarationOfLove() {
             <PP>
                 Calling the sun to work
             </PP>
-            <PoemFooter date={justASimpleDeclarationOfLove.date} />
+            <PoemFooter poem={justASimpleDeclarationOfLove} />
         </div>
     )
 }

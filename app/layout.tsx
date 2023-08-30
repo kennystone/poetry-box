@@ -1,5 +1,5 @@
 import './globals.css'
-import Footer from './footer'
+import LayoutFooter from './LayoutFooter'
 
 export const metadata = {
   title: 'Poems @ the Uplands',
@@ -16,7 +16,7 @@ export default function RootLayout({
       <body className="bg-amber-50">
         <main className={`p-4 md:p-16 lg:p-20 w-full max-w-[850px]`}>
           {children}
-          <Footer />
+          <LayoutFooter />
         </main>
       </body>
     </html>

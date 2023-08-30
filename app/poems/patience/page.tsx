@@ -1,16 +1,10 @@
-import Poem from "../poem"
-import PoemAuthor from "../PoemAuthor"
 import { PoemParagraph } from '../PoemParagraph'
 import { HeaderText } from "../PoemHeader"
 import PoemHeader from '../PoemHeader'
-import PoemFooter from "../PoemFooter"
+import PoemFooter from "../PoemFooter/PoemFooter"
+import { patience } from "../poems"
 
-export const patience: Poem = new Poem(
-    "patience",
-    "Ross Gay",
-    "patience",
-    new Date("2023-11-01")
-)
+
 
 interface PPProps {
     children: string | JSX.Element | JSX.Element[],
@@ -27,8 +21,7 @@ export default function Patience() {
         ["ce ", []]]
     return (
         <div>
-            <PoemHeader headerData={headerTextData} styleProps={{}} />
-            <PoemAuthor author={patience.author} />
+            <PoemHeader headerData={headerTextData} poem={patience} styleProps={{}} />
             <div>
                 <PP>
                     Call it sloth; call it sleaze;
@@ -155,7 +148,7 @@ export default function Patience() {
                     to whom this poem is prayer.
                 </PP>
             </div>
-            <PoemFooter date={patience.date} />
+            <PoemFooter poem={patience} />
         </div>
     )
 }
