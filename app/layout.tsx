@@ -14,9 +14,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-amber-50">
-        <main className={`p-4 md:p-16 lg:p-20 w-full max-w-[850px]`}>
-          {children}
-          <LayoutFooter />
+        <main className="flex justify-center items-center">
+          <div className="p-4 sm:px-8 md:px-8 lg:px-0 md:py-16  w-full max-w-screen-md">
+            {children}
+            <LayoutFooter />
+          </div>
         </main>
       </body>
     </html>
