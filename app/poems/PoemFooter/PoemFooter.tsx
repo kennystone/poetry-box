@@ -12,7 +12,7 @@ const PoemFooter = ({ poem }: { poem: Poem }) => {
     console.log(['index', poemIndex], ['prev', prevPoem], ['next', nextPoem]);
 
     return <div>
-        <div className="border-t-2 border-red-900">
+        <div className="border-t-2 border-yellow-900">
             <div className="grid grid-cols-3">
                 <PrevButton poem={prevPoem} />
                 <ArchiveButton />
