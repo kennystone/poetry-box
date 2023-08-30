@@ -1,5 +1,4 @@
 import { BookMania } from "./fonts/Bookmania";
-import PoemAuthor from "./PoemAuthor";
 import Swash from "./Swash";
 import Poem from "./poem";
 

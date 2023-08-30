@@ -1,4 +1,3 @@
-import PoemAuthor from "../PoemAuthor"
 import { HeaderText } from "../PoemHeader"
 import PoemHeader from '../PoemHeader'
 import PoemFooter from "../PoemFooter/PoemFooter"
