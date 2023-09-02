@@ -1,5 +1,4 @@
 import { BookMania } from './fonts/Bookmania'
-import Swash from './fonts/Swash'
 import Image from 'next/image'
 import uplandsImg from './images/uplands.svg'
 import UplandsSvg from "./images/UplandsSvg"
@@ -13,11 +12,9 @@ const LayoutFooter = () => {
     const { theme } = resolveConfig(tailwindConfig)
     const regal = theme.colors.regal
 
-    const p = <Swash letter="p" codes={["14"]} />
-
     return <div className="my-14">
         <div className="flex items-center justify-center">
-            <h3 className={`${BookMania.className} text-2xl p-2 text-center text-regal-700`}><span className="underline">little</span> <span className="underline">{p}oetry box</span></h3>
+            <h3 className={`${BookMania.className} text-2xl p-2 text-center text-regal-700 underline`}>little poetry box</h3>
         </div>
         <div className="flex items-center justify-center">
             <div className="px-7">
