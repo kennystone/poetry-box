@@ -13,7 +13,11 @@ module.exports = {
       'serif': ['Charter', 'Bitstream Charter', 'Cambria', 'Georgia', 'source-sans-pro', 'serif'],
       'sans': ['-apple-system', 'source-sans-pro', 'system-ui', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'regal': { "700": "#44403C", "500": '#57534E' }
+      },
+    },
   },
   plugins: [],
 }
