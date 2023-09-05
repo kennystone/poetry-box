@@ -1,6 +1,7 @@
 import { BookMania } from "../fonts/Bookmania";
 import Swash from "../fonts/Swash";
 import Poem from "./poem";
+import PageHeader from "../PageHeader";
 
 export type HeaderText = [string, string[]]
 
@@ -26,11 +27,11 @@ export default function PoemHeader({ headerData, poem, styleProps }: Props) {
         year: 'numeric',
     })
 
+    const pageHeaderText = "A little poem for " + dateStr
+
     return <div>
-        <div className="">
-            <p className="text-left sm:text-center text-base md:text-lg font-serif text-yellow-900">A little poem for {dateStr}</p>
-        </div>
-        <div className="border-t-2 border-yellow-900 py-3.5 md:py-9 lg:py-10">
+        <PageHeader text={pageHeaderText} />
+        <div className="py-3.5 md:py-9 lg:py-10">
             <h1 className={`${BookMania.className} text-2xl md:text-4xl text-emerald-900`} style={styleProps}>{header}</h1>
             <h3 className={`font-sans mt-2.5 md:mt-5 text-lg md:text-xl text-teal-700`}>
                 by <span style={{ textTransform: "none" }}> {poem.author} </span>

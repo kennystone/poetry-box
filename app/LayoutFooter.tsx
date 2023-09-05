@@ -2,6 +2,7 @@ import { BookMania } from './fonts/Bookmania'
 import Image from 'next/image'
 import uplandsImg from './images/uplands.svg'
 import UplandsSvg from "./images/UplandsSvg"
+import Divider from './Divider'
 
 const LayoutFooter = () => {
     const unused1 = <UplandsSvg width="80" />

@@ -3,6 +3,7 @@ import ArchiveButton from "./ArchiveButton"
 import { getPoemByIndex, getIndexForPoem } from "../poems";
 import NextButton from "./NextButton";
 import PrevButton from "./PrevButton";
+import Divider from "@/app/Divider";
 
 const PoemFooter = ({ poem }: { poem: Poem }) => {
 
@@ -11,7 +12,8 @@ const PoemFooter = ({ poem }: { poem: Poem }) => {
     const nextPoem = getPoemByIndex(poemIndex + 1);
 
     return <div>
-        <div className="border-t-2 border-yellow-900">
+        <div className="">
+            <Divider />
             <div className="grid grid-cols-3">
                 <PrevButton poem={prevPoem} />
                 <ArchiveButton />
