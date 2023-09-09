@@ -3,6 +3,7 @@ import Poem from './poem'
 import { allPoems } from './poems'
 import { BookMania } from '../fonts/Bookmania';
 import Divider from '../Divider';
+import PageHeader from '../PageHeader';
 
 function poemItem(poem: Poem) {
     const dateStr = poem.date.toLocaleDateString('en-US', {
@@ -18,7 +19,8 @@ export default function Index() {
     poemsList.reverse()
     return (
         <div>
-            <h1 className={`${BookMania.className} text-2xl md:text-4xl text-emerald-900`} >Archive</h1>
+            <PageHeader text='A new poem arrives monthly' />
+            <h1 className={`${BookMania.className} mt-8 text-2xl md:text-4xl text-emerald-900`} >Archive</h1>
             <ul className="py-8">
                 {poemsList}
             </ul>
