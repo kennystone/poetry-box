@@ -1,9 +1,35 @@
 import Poem from "../poem"
-import ArchiveButton from "./ArchiveButton"
 import { getPoemByIndex, getIndexForPoem } from "../poems";
-import NextButton from "./NextButton";
-import PrevButton from "./PrevButton";
 import Divider from "@/app/Divider";
+import Link from "next/link";
+import HeartArrowSvg from "@/app/images/HeartArrow";
+import Swash from "@/app/fonts/Swash";
+import { BookMania } from "@/app/fonts/Bookmania";
+
+const PoemNavButton = ({ poem, classOpts }: { poem: Poem | null, classOpts: String }) => {
+    let visibility = "invisible"
+    let slug = ""
+    if (poem != null) {
+        visibility = "visible"
+        slug = "/poems/" + poem.slug()
+    }
+    return <div className={`w-[150] ${visibility}`}>
+        <Link className="" href={slug}>
+            <HeartArrowSvg className={`fill-rose-800 ${classOpts}`} width="60" />
+        </Link >
+    </div>
+}
+
+const Archive = () => {
+    return <span>
+        <Swash letter={"a"} codes={["01"]} />
+        rc
+        <Swash letter={"h"} codes={["17"]} />
+        i
+        <Swash letter={"v"} codes={["20"]} />
+        e
+    </span>
+}
 
 const PoemFooter = ({ poem }: { poem: Poem }) => {
 
@@ -12,15 +38,17 @@ const PoemFooter = ({ poem }: { poem: Poem }) => {
     const nextPoem = getPoemByIndex(poemIndex + 1);
 
     return <div>
-        <div className="">
+        <div className="w-full">
             <Divider />
-            <div className="grid grid-cols-3">
-                <PrevButton poem={prevPoem} />
-                <ArchiveButton />
-                <NextButton poem={nextPoem} />
+            <div className="mt-4 flex items-center justify-center w-full">
+                <PoemNavButton poem={prevPoem} classOpts="transform scale-x-[-1]" />
+                <div className="mx-8">
+                    <h3 className="text-center"><Link className={`${BookMania.className} text-rose-800 font-serif`} href="/poems"><Archive /></Link></h3>
+                </div>
+                <PoemNavButton poem={nextPoem} classOpts="" />
             </div>
         </div>
-    </div>
+    </div >
 }
 
 export default PoemFooter

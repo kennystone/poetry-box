@@ -1,4 +1,3 @@
-import { BookMania } from "./fonts/Bookmania"
 import Divider from "./Divider"
 
 const PageHeader = ({ text }: { text: string }) => {

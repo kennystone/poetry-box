@@ -2,8 +2,6 @@ const UplandsSvg = (props: any) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         id="d"
-        width="2.014in"
-        height="1.392in"
         data-name="Layer 1"
         viewBox="0 0 144.98 100.241"
         fill="none"

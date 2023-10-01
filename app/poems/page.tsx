@@ -19,7 +19,7 @@ export default function Index() {
     poemsList.reverse()
     return (
         <div>
-            <PageHeader text='A new poem arrives monthly' />
+            <PageHeader text='Poetry delight every month' />
             <h1 className={`${BookMania.className} mt-8 text-2xl md:text-4xl text-emerald-900`} >Archive</h1>
             <ul className="py-8">
                 {poemsList}
