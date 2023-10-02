@@ -101,7 +101,7 @@ export default function ForANewBeginning() {
                             Unfurl yourself into the grace of beginning
                         </p>
                         <p>
-                            That is at one with your life's desire.
+                            That is at one with your life&apos;s desire.
                         </p>
                     </div>
                 </PP>
