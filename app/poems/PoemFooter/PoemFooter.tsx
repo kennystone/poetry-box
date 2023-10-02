@@ -22,11 +22,11 @@ const PoemNavButton = ({ poem, classOpts }: { poem: Poem | null, classOpts: Stri
 
 const Archive = () => {
     return <span>
-        <Swash letter={"a"} codes={["01"]} />
+        <Swash letter={"a"} codes={["01"]} smallCaps={false} />
         rc
-        <Swash letter={"h"} codes={["17"]} />
+        <Swash letter={"h"} codes={["17"]} smallCaps={false} />
         i
-        <Swash letter={"v"} codes={["20"]} />
+        <Swash letter={"v"} codes={["20"]} smallCaps={false} />
         e
     </span>
 }
