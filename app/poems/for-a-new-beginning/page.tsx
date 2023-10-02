@@ -15,9 +15,11 @@ const PP = ({ children }: PPProps): JSX.Element => {
 
 export default function ForANewBeginning() {
     const headerTextData: HeaderText[] = [
-        ["For ", []],
-        ["A", [""]],
-        [" New ", []],
+        ["Fo", []],
+        ["r", ["20"]],
+        [" a ", ["small-caps"]],
+        ["N", ["19", "20"]],
+        ["ew ", []],
         ["Beginning", [""]],
     ]
     return (

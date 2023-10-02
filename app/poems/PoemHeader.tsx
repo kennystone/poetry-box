@@ -17,8 +17,13 @@ export default function PoemHeader({ headerData, poem, styleProps }: Props) {
             // if no swash codes, just return the text
             return text
         } else {
+            let smallCaps = false;
+            if (codes[0] == "small-caps") {
+                codes.shift()
+                smallCaps = true;
+            }
             // else, use the Swash Component to build out the font feature settings span
-            return <Swash key={`swash-${index}`} letter={text} codes={codes} />
+            return <Swash key={`swash-${index}`} letter={text} codes={codes} smallCaps={smallCaps} />
         }
     })
 
