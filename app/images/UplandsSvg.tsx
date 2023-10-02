@@ -6,7 +6,7 @@ const UplandsSvg = (props: any) => (
         viewBox="0 0 144.98 100.241"
         fill="none"
         stroke="#060072"
-        stroke-miterlimit="10"
+        strokeMiterlimit="10"
         {...props}
     >
         <path

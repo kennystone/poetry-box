@@ -1,8 +1,8 @@
-import JustASimpleDeclarationOfLove from './poems/just-a-simple-declaration-of-love/page'
+import ForANewBeginning from './poems/for-a-new-beginning/page'
 
 
 export default function Home() {
   return (
-    <JustASimpleDeclarationOfLove />
+    <ForANewBeginning />
   )
 }

@@ -15,7 +15,7 @@ const PoemNavButton = ({ poem, classOpts }: { poem: Poem | null, classOpts: Stri
     }
     return <div className={`w-[150] ${visibility}`}>
         <Link className="" href={slug}>
-            <HeartArrowSvg className={`fill-rose-800 ${classOpts}`} width="60" />
+            <HeartArrowSvg className={`fill-rose-800 ${classOpts}`} width="50" />
         </Link >
     </div>
 }
@@ -42,7 +42,7 @@ const PoemFooter = ({ poem }: { poem: Poem }) => {
             <Divider />
             <div className="mt-4 flex items-center justify-center w-full">
                 <PoemNavButton poem={prevPoem} classOpts="transform scale-x-[-1]" />
-                <div className="mx-8">
+                <div className="mx-6">
                     <h3 className="text-center"><Link className={`${BookMania.className} text-rose-800 font-serif`} href="/poems"><Archive /></Link></h3>
                 </div>
                 <PoemNavButton poem={nextPoem} classOpts="" />
