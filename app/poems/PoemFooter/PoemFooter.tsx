@@ -37,7 +37,7 @@ const PoemFooter = ({ poem }: { poem: Poem }) => {
     const prevPoem = getPoemByIndex(poemIndex - 1);
     const nextPoem = getPoemByIndex(poemIndex + 1);
 
-    return <div>
+    return <div className="print:hidden">
         <div className="w-full">
             <Divider />
             <div className="mt-4 flex items-center justify-center w-full">

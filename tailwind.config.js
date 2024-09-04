@@ -17,6 +17,10 @@ module.exports = {
       colors: {
         'regal': { "700": "#44403C", "500": '#57534E' }
       },
+      screens: {
+        print: { raw: 'print' },
+        screen: { raw: 'screen' },
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,5 @@
 import './globals.css'
+import './print.css'
 import LayoutFooter from './LayoutFooter'
 
 export const metadata = {
