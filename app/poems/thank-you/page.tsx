@@ -31,7 +31,7 @@ export default function ThankYou() {
                     and barefoot in the frosty grass, hearing,
                 </p>
                 <p>
-                    again, the earth's great, sonorous moan that says
+                    again, the earth&apos;s great, sonorous moan that says
                 </p>
                 <p>
                     you are the air of the now and gone, that says
