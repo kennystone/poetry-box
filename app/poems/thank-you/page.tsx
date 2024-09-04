@@ -15,9 +15,9 @@ const PP = ({ children }: PPProps): JSX.Element => {
 
 export default function ThankYou() {
     const headerTextData: HeaderText[] = [
-        ["T", ["01"]],
+        ["T", ["11", "14"]],
         ["hank ", []],
-        ["Y", ["11"]],
+        ["Y", ["19"]],
         ["ou", []],
     ]
     return (
