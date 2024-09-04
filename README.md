@@ -12,3 +12,5 @@ a little website with poems for a little box with poems
 
 - add to poems list in `poems.jsx`
 - change the index page
+- check the archive page
+- generate and check the QRCode
