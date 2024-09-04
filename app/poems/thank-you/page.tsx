@@ -58,7 +58,7 @@ export default function ThankYou() {
                     ascending from your lips. Walk
                 </p>
                 <p>
-                    through the garden's dormant splendor.
+                    through the garden&apos;s dormant splendor.
                 </p>
                 <p>
                     Say only, thank you.
