@@ -4,7 +4,7 @@ import UplandsSvg from "./images/UplandsSvg"
 import Link from 'next/link'
 
 const LayoutFooter = () => {
-    return <div className="my-14 print:bottom-0">
+    return <div className="mt-6 print:bottom-0">
         <div className="flex items-center justify-center">
             <Link href="/poems">
                 <h3 className={`${BookMania.className} text-2xl p-2 text-center text-regal-700 underline`}>little poetry box</h3>
