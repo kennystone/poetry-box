@@ -32,7 +32,7 @@ export default function PoemHeader({ headerData, poem, styleProps }: Props) {
         year: 'numeric',
     })
 
-    const pageHeaderText = "A little poem for " + dateStr
+    const pageHeaderText = "Poetry delight for " + dateStr
 
     return <div>
         <PageHeader text={pageHeaderText} />
