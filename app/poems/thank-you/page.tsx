@@ -3,13 +3,13 @@ import PoemHeader from '../PoemHeader'
 import PoemFooter from "../PoemFooter/PoemFooter"
 import { PoemParagraph } from "../PoemParagraph"
 import { thankYou } from "../poems"
-
+import { ReactNode } from "react"
 
 interface PPProps {
-    children: string | JSX.Element | JSX.Element[],
+    children: ReactNode,
 }
 
-const PP = ({ children }: PPProps): JSX.Element => {
+const PP = ({ children }: PPProps): ReactNode => {
     return <PoemParagraph serif={true}>{children}</PoemParagraph>
 }
 
