@@ -5,8 +5,8 @@ a little website with poems for a little box with poems
 
 ## dev
 
-    npm install
-    npm run dev
+    bun install
+    bun run dev
 
 ## poem release checklist
 
