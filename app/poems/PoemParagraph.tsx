@@ -10,5 +10,5 @@ interface Props {
 export const PoemParagraph = ({ children, style = {}, serif = false, narrow = false }: Props): ReactNode => {
     const margin = narrow ? "mb-0.5 md:mb-2" : "mb-4 md:mb-8"
     const font = serif ? "font-serif" : "font-sans"
-    return <div className={`text-base text-slate-800 md:text-lg ${margin} ${font}`} style={style}>{children}</div>
+    return <div className={`break-inside-avoid text-base text-slate-800 md:text-lg ${margin} ${font}`} style={style}>{children}</div>
 };

@@ -1,4 +1,43 @@
 @media print {
-    @page {}
+    /* A4 sheet. margin:0 lets the amber background reach the page edges;
+       readable margins are applied to the content container below. */
+    @page {
+        size: A4;
+        margin: 0;
+    }
 
+    /* Preserve every color, tint, and the custom typeface exactly as on screen.
+       print-color-adjust is inherited, so this cascades to all elements. */
+    html {
+        background: #fffbeb; /* amber-50 — fills each A4 page edge-to-edge */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    html,
+    body {
+        max-width: none;
+        overflow: visible;
+    }
+
+    body {
+        background: #fffbeb; /* amber-50 */
+    }
+
+    /* Drop the screen-centering flex + width cap so the poem uses the full
+       printable width, and apply A4 margins as padding (so background bleeds). */
+    main {
+        display: block;
+    }
+
+    main > div {
+        max-width: none;
+        width: 100%;
+        padding: 16mm 18mm;
+    }
+
+    /* Keep a stanza (and the title block) from splitting across two pages. */
+    .break-inside-avoid {
+        break-inside: avoid;
+    }
 }

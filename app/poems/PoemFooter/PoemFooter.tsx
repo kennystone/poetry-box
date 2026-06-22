@@ -5,6 +5,7 @@ import Link from "next/link";
 import HeartArrowSvg from "@/app/images/HeartArrow";
 import Swash from "@/app/fonts/Swash";
 import { BookMania } from "@/app/fonts/Bookmania";
+import PrintButton from "../PrintButton";
 
 const PoemNavButton = ({ poem, text }: { poem: Poem | null, text: string }) => {
     let visibility = "invisible"
@@ -38,6 +39,7 @@ const PoemFooter = ({ poem }: { poem: Poem }) => {
     const nextPoem = getPoemByIndex(poemIndex + 1);
 
     return <div className="print:hidden">
+        <PrintButton />
         <div className="w-full">
             <Divider />
             <div className="my-2.5 flex items-center justify-center w-full">
